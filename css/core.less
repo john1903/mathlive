@@ -713,15 +713,17 @@
   }
 
   .ML__mtable {
+    flex: 1;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px 0px;
+    align-items: center;
+
     .ML__vertical-separator {
+      display: inline-block;
       // margin and border-right are set in Javascript
       min-width: 1px; // Prevent Chrome from omitting a line.
-      box-sizing: content-box;
-      flex: 1;
-      display: flex !important;
-      flex-wrap: wrap;
-      gap: 10px 0px;
-      align-items: center;
+      box-sizing: border-box;
     }
 
     .ML__arraycolsep {
